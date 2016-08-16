@@ -13,7 +13,7 @@ import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity
 {
-    String[] menu;
+    String[] menu= new String[]{"Dashboard","Profile","Windows","Team","List Of Info","About Us","Logout","Exit"};;
     DrawerLayout dLayout;
     ListView dList;
     ArrayAdapter<String> adapter;
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
 
 
-        menu = new String[]{"Dashboard","Profile","Windows","Team","List Of Info","About Us","Logout","Exit"};
+       // menu
         dLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         dList = (ListView) findViewById(R.id.left_drawer);
 
