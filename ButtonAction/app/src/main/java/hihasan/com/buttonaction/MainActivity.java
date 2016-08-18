@@ -1,15 +1,20 @@
 package hihasan.com.buttonaction;
 
+import android.content.Context;
+import android.content.DialogInterface;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.*;
+import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
 {
     private Button button;
+    private Context context=this;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -24,6 +29,17 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View arg0)
             {
                 Toast.makeText(getApplicationContext(), "Button is clicked", Toast.LENGTH_LONG).show();
+                new AlertDialog.Builder(context)
+                        .setTitle("Confirmation Box")
+                        .setMessage("This is a Confirmation Box")
+                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener()
+                        {
+                          public void onClick(DialogInterface, int whichButton)
+                          {
+                              Dashboard.this.finish();
+                          }
+                        })
             }
         });
     }
