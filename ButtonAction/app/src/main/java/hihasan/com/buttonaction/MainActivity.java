@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity
                               Dashboard.this.finish();
                           }
                         })
+                        .setNegativeButton(android.R.string.no, null).show();
             }
         });
     }
