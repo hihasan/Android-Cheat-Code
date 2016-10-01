@@ -1,32 +1,37 @@
 package hihasan.com.customlview;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ListView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
 {
 
     ListView list;
     String[] web = {
-            "Cookies & Cream Oreo",
-            "Crunchy Korean fried chicken",
-            "Fillet of Beef Wellington",
-            "Teriyaki Burgers",
-            "Turkish Chicken Kebabs",
+            "Facebook",
+            "Facebook1",
+            "Facebook22",
+            "Facebook333",
+            "Facebook4444",
     } ;
     Integer[] imageId = {
-            R.drawable.bb,
-            R.drawable.ee,
-            R.drawable.qq,
-            R.drawable.rr,
-            R.drawable.tt,
+            R.drawable.fb_icon,
+            R.drawable.fb_icon,
+            R.drawable.fb_icon,
+            R.drawable.fb_icon,
+            R.drawable.fb_icon
 
 
 
     };
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView( R.layout.activity_main);
 
@@ -40,28 +45,23 @@ public class MainActivity extends AppCompatActivity
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
                 if(position == 0) {
-                    Intent intent = new Intent(MainActivity.this, Recipes1.class);
-                    startActivity(intent);
+                    Toast.makeText(MainActivity.this, "You Clicked at " +web[+ position], Toast.LENGTH_SHORT).show();
                 }
 
                 if(position == 1) {
-                    Intent intent = new Intent(MainActivity.this, Recipes2.class);
-                    startActivity(intent);
+                    Toast.makeText(MainActivity.this, "You Clicked at " +web[+ position], Toast.LENGTH_SHORT).show();
                 }
 
                 if(position == 2) {
-                    Intent intent = new Intent(MainActivity.this, Recipes3.class);
-                    startActivity(intent);
+                    Toast.makeText(MainActivity.this, "You Clicked at " +web[+ position], Toast.LENGTH_SHORT).show();
                 }
 
                 if(position == 3) {
-                    Intent intent = new Intent(MainActivity.this, Recipes4.class);
-                    startActivity(intent);
+                    Toast.makeText(MainActivity.this, "You Clicked at " +web[+ position], Toast.LENGTH_SHORT).show();
                 }
 
                 if(position == 4) {
-                    Intent intent = new Intent(MainActivity.this, Recipes5.class);
-                    startActivity(intent);
+                    Toast.makeText(MainActivity.this, "You Clicked at " +web[+ position], Toast.LENGTH_SHORT).show();
                 }
                 //Toast.makeText(MainActivity.this, "You Clicked at " +web[+ position], Toast.LENGTH_SHORT).show();
 
