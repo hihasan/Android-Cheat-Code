@@ -11,6 +11,8 @@ public class MainActivity extends AppCompatActivity
 {
 
     ListView list;
+
+    //String to view
     String[] web = {
             "Facebook",
             "Facebook1",
@@ -18,15 +20,14 @@ public class MainActivity extends AppCompatActivity
             "Facebook333",
             "Facebook4444",
     } ;
+
+    //Image to view
     Integer[] imageId = {
             R.drawable.fb_icon,
             R.drawable.fb_icon,
             R.drawable.fb_icon,
             R.drawable.fb_icon,
             R.drawable.fb_icon
-
-
-
     };
 
     @Override
@@ -39,7 +40,8 @@ public class MainActivity extends AppCompatActivity
         CustomList adapter = new CustomList(MainActivity.this, web, imageId);
         list=(ListView)findViewById(R.id.list);
         list.setAdapter(adapter);
-        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener()
+        {
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
