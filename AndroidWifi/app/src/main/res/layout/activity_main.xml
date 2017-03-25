@@ -18,10 +18,10 @@
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="76dp"
         android:text="Enable Wifi"
         android:layout_marginTop="16sp"
-        android:layout_marginRight="8sp"/>
+        android:layout_marginRight="16sp"
+        android:layout_marginLeft="16sp"/>
 
     <Button
         android:id="@+id/button2"
@@ -29,6 +29,7 @@
         android:layout_height="wrap_content"
         android:text="Disable Wifi"
         android:layout_marginTop="16sp"
-        android:layout_toRightOf="@+id/button1"/>
+        android:layout_toRightOf="@+id/button1"
+        android:layout_marginLeft="16sp"/>
 
 </RelativeLayout>
