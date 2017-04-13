@@ -1,0 +1,7 @@
+#Thu Apr 13 12:16:41 BDT 2017
+base.0=/home/hasan/Videos/13-04-2017/OkHttp/OkHttp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_77a004ccbfaa8e0005d1b790abca0024bbe26104
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/home/hasan/Videos/13-04-2017/OkHttp/OkHttp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_741144a9cd3fd4d584bed52a1355c8e44d6f3085/classes.dex
+base.1=/home/hasan/Videos/13-04-2017/OkHttp/OkHttp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_741144a9cd3fd4d584bed52a1355c8e44d6f3085
+file.0=/home/hasan/Videos/13-04-2017/OkHttp/OkHttp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_77a004ccbfaa8e0005d1b790abca0024bbe26104/classes.dex
