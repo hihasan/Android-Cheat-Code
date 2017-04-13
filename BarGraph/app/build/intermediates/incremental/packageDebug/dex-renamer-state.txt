@@ -1,0 +1,7 @@
+#Thu Apr 13 15:03:39 BDT 2017
+base.0=/home/hasan/Videos/13-04-2017/BarGraph/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_0b5ef6aedc4c5b6bff6a918dd0d27ab9e394b107
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/home/hasan/Videos/13-04-2017/BarGraph/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_797eaa5e477e9e0d7733bd989d6c4be42dbcadca/classes.dex
+base.1=/home/hasan/Videos/13-04-2017/BarGraph/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_797eaa5e477e9e0d7733bd989d6c4be42dbcadca
+file.0=/home/hasan/Videos/13-04-2017/BarGraph/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_0b5ef6aedc4c5b6bff6a918dd0d27ab9e394b107/classes.dex
