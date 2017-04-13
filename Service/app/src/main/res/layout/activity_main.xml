@@ -10,8 +10,22 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.hihasan.service.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/start"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_marginTop="16sp"
+        android:text="Start"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
+        android:layout_below="@+id/start"
+        android:text="Cancel"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"/>
 </RelativeLayout>
