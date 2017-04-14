@@ -25,4 +25,10 @@ public class BackgroundService extends Service
         Toast.makeText(this,"onBind Method",Toast.LENGTH_SHORT).show();
         return null;
     }
+
+    @Override
+    public void onDestroy() {
+        //super.onDestroy();
+        Toast.makeText(this,"OnDestroy Method",Toast.LENGTH_SHORT).show();
+    }
 }
