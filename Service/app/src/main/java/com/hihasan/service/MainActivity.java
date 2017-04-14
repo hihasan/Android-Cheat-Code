@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity
     private AppCompatButton b1,b2;
     private PendingIntent pedingIntent;
     private AlarmManager alarmManager;
-    public static int i=10;
+    public static int i=5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
+                b1.setText("STOP");
                 Intent myIntent=new Intent(MainActivity.this,BackgroundService.class);
                 pedingIntent=PendingIntent.getService(MainActivity.this,0,myIntent,0);
                 alarmManager=(AlarmManager) getSystemService(ALARM_SERVICE);
@@ -52,6 +53,7 @@ public class MainActivity extends AppCompatActivity
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                b1.setText("START");
                 alarmManager=(AlarmManager) getSystemService(ALARM_SERVICE);
                 alarmManager.cancel(pedingIntent);
 
