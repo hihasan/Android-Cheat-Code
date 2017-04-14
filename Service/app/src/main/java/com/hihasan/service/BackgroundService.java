@@ -28,8 +28,10 @@ public class BackgroundService extends Service
 
     @Override
     public void onDestroy() {
-        //super.onDestroy();
+        super.onDestroy();
         Toast.makeText(this,"OnDestroy Method",Toast.LENGTH_SHORT).show();
+
+
     }
 
     @Override
@@ -37,5 +39,12 @@ public class BackgroundService extends Service
     {
         //super.onStart(intent, startId);
         Toast.makeText(this,"OnStart Method",Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public boolean onUnbind(Intent intent)
+    {
+        Toast.makeText(this,"OnUnbind Method",Toast.LENGTH_SHORT).show();
+        return super.onUnbind(intent);
     }
 }
