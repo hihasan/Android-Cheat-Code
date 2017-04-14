@@ -11,6 +11,13 @@ import android.widget.Toast;
 
 public class BackgroundService extends Service
 {
+    @Override
+    public void onCreate()
+
+    {
+        //super.onCreate();
+        Toast.makeText(this,"onCreate Method",Toast.LENGTH_SHORT).show();
+    }
 
     @Override
     public IBinder onBind(Intent intent)
