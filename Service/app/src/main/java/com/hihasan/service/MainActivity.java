@@ -3,13 +3,13 @@ package com.hihasan.service;
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Intent;
-import java.util.Calendar;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatButton;
 import android.view.View;
 import android.widget.Toast;
+
+import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity
                 Calendar calender= Calendar.getInstance();
                 calender.setTimeInMillis(System.currentTimeMillis());
                 calender.add(Calendar.SECOND,10);
-                alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, System.currentTimeMillis()+(i*1000),(i*1000),pedingIntent));
+                alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, System.currentTimeMillis()+(i*1000),(i*1000),pedingIntent);
                 Toast.makeText(getApplicationContext(),"Alarm Start",Toast.LENGTH_SHORT).show();
 
             }
@@ -52,6 +52,11 @@ public class MainActivity extends AppCompatActivity
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                alarmManager=(AlarmManager) getSystemService(ALARM_SERVICE);
+                alarmManager.cancel(pedingIntent);
+
+                //Tell User what happened
+                Toast.makeText(getApplicationContext(),"Cancel Service",Toast.LENGTH_SHORT).show();
 
             }
         });
