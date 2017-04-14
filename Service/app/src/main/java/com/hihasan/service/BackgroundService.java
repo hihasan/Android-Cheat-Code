@@ -31,4 +31,11 @@ public class BackgroundService extends Service
         //super.onDestroy();
         Toast.makeText(this,"OnDestroy Method",Toast.LENGTH_SHORT).show();
     }
+
+    @Override
+    public void onStart(Intent intent, int startId)
+    {
+        //super.onStart(intent, startId);
+        Toast.makeText(this,"OnStart Method",Toast.LENGTH_SHORT).show();
+    }
 }
